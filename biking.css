@@ -1,0 +1,102 @@
+
+button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    transition: all 0.3s;
+}
+button::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale( 1,0.6);
+}
+button:hover{
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color), 
+    0 0 2.5em 2em var(--glow-spread-color), 
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+button:active{
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color)
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a252c;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.container .box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
+}
+
+.container .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container:hover>:not(:hover){
+    margin: 0 -20px;
+    filter: drop-shadow(0 0 25px) drop-shadow(0 0 45px #000);
+    transform: perspective(500px) rotateY(30deg) scale(0.95);
+}
+.container .box:hover~.box{
+    transform: perspective(500px) rotateY(-30deg) scale(0.95);
+}
+.container .box:hover{
+    transform: perspective(500px) rotateY(0) scale(1.5);
+    z-index: 1000;
+}
+audio {
+    position: absolute;
+    top: 20px;
+    left: 27cm;
+    z-index: 1; /* Ensure the audio element is above other content */
+}

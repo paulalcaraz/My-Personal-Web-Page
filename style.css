@@ -1,0 +1,363 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    scroll-behavior: smooth; 
+}
+audio {
+    position: absolute;
+    top: 10px;
+    left: 27cm;
+    z-index: 1; /* Ensure the audio element is above other content */
+}
+
+.box1 {
+    height: 16.8cm;
+    width: 100%;
+    background-image: url(Anime_1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-attachment: fixed;
+    position: relative;
+    flex-wrap: wrap;
+   
+}
+
+.box1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 59;
+    padding-right: 22cm;
+}
+
+.box1 ul li {
+    font-size: 24px;
+    color: white;
+    margin: 0px 0px;
+    padding-right: 1cm;
+    padding-top: 10px;
+}
+
+.box1 .right-image {
+    max-width: none; 
+    margin-right: 0.7cm;
+    padding-bottom: 15cm;
+}
+
+.box2{
+    height: 17cm;
+    width: 100%;
+    background-image: url(Anime_2.png);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment:fixed ;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(Anime_3.png);
+    transition: background-image;
+}
+.images{
+    width: 750px;
+    height: 500px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    background-image: url(Familypic.png);
+    background-position: center;
+    background-size: cover;
+}
+.images p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s;
+    font-size: 2rem;
+    color: #fff;
+    text-align: justify;
+}
+.images:hover {
+    box-shadow: 0 0 0 400px rgb(0, 0, 0, 0.9) inset;
+    transition: 1s;
+}
+.images:hover p{
+    opacity: 1;
+    transform:  scale(1);
+}
+.box3:hover{
+    box-shadow: 0 0 0 400px rgb(0, 0, 0, 0.9) inset;
+    transition: 1s;
+    
+}
+.box4{
+    height: 17cm;
+    width: 100%;
+    background-image: url(anime_4.png);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment:fixed ;
+}
+h1{
+    font-family: serif;
+    font-size: 60px;
+    color: whitesmoke;
+    margin: 250px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 8cm;
+    padding-top: 2cm;
+    
+}
+.box1 p {
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 10px 3px;
+    padding-bottom: 10cm;
+    padding-left: 2.5in;
+    padding-top: 5%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: none;
+    transition: 0.50s ease;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+ul li{
+    text-decoration: none;
+    margin-right:1cm ; 
+    padding-left: 0.2cm;
+   
+    
+}
+ul:hover a{
+    color: #020024;
+    
+}
+ul:hover a:hover{
+    color: #BB2525;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+.box1 .wrapper img{
+    filter: grayscale(50%);
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding-bottom: 3cm;
+    
+}
+.box1 .wrapper img:hover{
+    transform: scale(1.3);
+    filter: grayscale(0%);
+    padding-right: 2cm;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0cm;
+}
+.card{
+    background: white;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-image{
+    height: 300px;
+    margin-bottom: 15px; ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px 15px 0 0;
+}
+.sunsetpic_1{
+    background-image: url(sunsetpic_1.png);
+}
+.basketballpic_1{
+    background-image: url(basketballpic_1.png);
+    
+}
+.bikingpic_1{
+    background-image: url(bikingpic_1.png);
+}
+.card h2{
+    padding: 10px;
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.horizontal-word {
+    white-space: pre-line; 
+    font-size: 60px; 
+    display: inline;
+    margin-right: 3cm;
+    margin-top: 2cm;
+}
+.horizontal-word_2 {
+    white-space: pre-line; 
+    font-size: 60px; 
+    display: inline;
+    margin-right: 3cm;
+    margin-top: 2cm;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: white;
+}
+footer a{
+    text-decoration: none;
+    color: black;   
+}
+footer .wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 59px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px #000;
+    transition: all 0,3s ease-out;
+}
+footer .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+footer .wrapper .button:nth-child(1):hover .icon {
+    background-color: #4267b2;
+}
+footer .wrapper .button:nth-child(2):hover .icon {
+    background: linear-gradient(45deg, #f09433 05%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+footer .wrapper .button:nth-child(3):hover .icon {
+    background-color: #1da1f2;
+}
+footer .wrapper .button:nth-child(4):hover .icon {
+    background-color: #FFFC00;
+}
+
+footer .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+footer .wrapper .button:hover .icon i{
+    color: #fff;
+}
+.contact-me {
+    text-align: left; 
+    padding-left: 20px; 
+}
+
+.contact-me p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.contact-me p2 {
+    font-size: 20px;
+    margin-bottom: 2cm;
+    padding-bottom: 2cm;
+}
+
+.contact-me p3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box4 .wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 1cm;
+}
+
+.box4 .horizontal-word_3 {
+    white-space: pre-line;
+    font-size: 60px;
+    padding-right: 2cm; 
+    padding-left: 1cm;
+}
+
+.box4 .wrapper .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.box4 .container h4 {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 1.5em;
+    margin-bottom: 20px; 
+    padding-right: 3cm;
+ 
+
+}
+
+.box4 .wrapper img.right-image2 {
+    width: 300px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px solid #f1a752;
+}
